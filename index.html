@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ashi & Abhishek</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+    <nav>
+
+        <div class="logo">
+            Ashi <span>&</span> Abhishek
+        </div>
+
+        
+    </nav>
+</header>
+
+<!-- SLIDER -->
+<section class="slider">
+    <div class="slides">
+
+        <div class="slide active" style="background-image:url('images/g3.JPG')"></div>
+        <div class="slide" style="background-image:url('images/image2.JPG')"></div>
+        <div class="slide" style="background-image:url('images/image3.JPG')"></div>
+
+    </div>
+
+    <!-- SLIDER CONTENT -->
+    <div class="slider-content">
+        <h1>Ashi & Abhishek</h1>
+        <div class="divider"></div>
+        <p>WE'RE GETTING MARRIED</p>
+    </div>
+
+    <!-- CONTROLS -->
+    <button class="arrow left" onclick="prevSlide()">&#10094;</button>
+    <button class="arrow right" onclick="nextSlide()">&#10095;</button>
+
+    <div class="scroll-down">⌄</div>
+</section>
+
+<!-- ABOUT SECTION -->
+<section class="about-section" id="about">
+
+    <div class="section-header">
+        <span class="sub-title">ABOUT</span>
+        <h2>Bride & Groom</h2>
+        <div class="heart-divider">
+            <span></span>
+            <i>❤</i>
+            <span></span>
+        </div>
+    </div>
+
+    <!-- GROOM -->
+    <div class="about-row">
+        <div class="about-text">
+            <h3>The Groom</h3>
+            <div class="signature">Abhishek</div>
+        </div>
+
+        <div class="about-image">
+            <img src="images/groom.jpg" alt="Groom">
+        </div>
+    </div>
+
+    <!-- BRIDE -->
+    <div class="about-row reverse">
+        <div class="about-text">
+            <h3>The Bride</h3>
+            
+            <div class="signature">Ashi</div>
+        </div>
+
+        <div class="about-image">
+            <img src="images/bride.jpg" alt="Bride">
+        </div>
+    </div>
+
+</section>
+
+<section class="prewedding-section">
+
+    <div class="section-header">
+        <span class="sub-title">Engagement</span>
+        <h2 class="script-title">
+            Two hearts, one journey, and a lifetime of love.
+        </h2>
+
+        <div class="heart-divider">
+            <span></span>
+            <i>❤</i>
+            <span></span>
+        </div>
+    </div>
+
+    <div class="video-wrapper">
+        <div class="video-container">
+            <video class="wedding-video" controls poster="images/thumnail.jpg">
+                <source src="images/video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+
+
+        </div>
+    </div>
+
+</section>
+
+
+<!-- GALLERY SECTION -->
+<section class="gallery-section">
+
+    <!-- Gallery Header -->
+    <div class="gallery-header">
+        <div class="overlay"></div>
+        <div class="gallery-header-content">
+            <span class="sub-title change">GALLERY</span>
+            <h2 class="script-title change2">Our Photo Gallery</h2>
+
+            <div class="heart-divider light">
+                <span></span>
+                <i>❤</i>
+                <span></span>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Gallery Grid -->
+    <div class="gallery-grid">
+        <img src="images/g1.jpg" onclick="openLightbox(this)">
+        <img src="images/g2.jpg" onclick="openLightbox(this)">
+        <img src="images/g3.jpg" onclick="openLightbox(this)">
+        <img src="images/g4.jpg" onclick="openLightbox(this)">
+        <img src="images/g5.jpg" onclick="openLightbox(this)">
+        <img src="images/g6.jpg" onclick="openLightbox(this)">
+        <img src="images/g7.jpg" onclick="openLightbox(this)">
+        <img src="images/g8.jpg" onclick="openLightbox(this)">
+        <img src="images/g9.jpg" onclick="openLightbox(this)">
+        <img src="images/g10.JPG" onclick="openLightbox(this)">
+        <img src="images/g11.JPeG" onclick="openLightbox(this)">
+        <img src="images/g12.JPeG" onclick="openLightbox(this)">
+    </div>
+
+</section>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox">
+    <span class="close" onclick="closeLightbox()">×</span>
+    <img id="lightbox-img">
+</div>
+
+<!-- PROGRAMS SECTION -->
+<section class="programs-section">
+
+    <div class="section-header">
+        <span class="sub-title">PROGRAMS</span>
+        <h2 class="script-title">Our Wedding</h2>
+        <div class="heart-divider">
+            <span></span>
+            <i>❤</i>
+            <span></span>
+        </div>
+    </div>
+
+    <div class="programs-timeline">
+
+        <!-- Engagement -->
+        <div class="program-card">
+            <img src="images/engagement-removebg-preview.png" alt="">
+            <h3>Dhanbati (धनबट्टी)</h3>
+            <p>08th March, 2026</p>
+            <p>11:00 AM onwards</p>
+            <a href="#">📍 Ranchi</a>
+        </div>
+
+        <!-- Sangeet -->
+        <div class="program-card">
+            <img src="images/sangeet-removebg-preview.png" alt="">
+            <h3>Sangeet (संगीत)</h3>
+            <p>09th March, 2026</p>
+            <p>7:00 PM onwards</p>
+            <a href="#">📍 Bumuar</a>
+        </div>
+
+        <!-- Haldi -->
+        <div class="program-card">
+            <img src="images/haldi-removebg-preview.png" alt="">
+            <h3>Haldi (हल्दी)</h3>
+            <p>10th March, 2026</p>
+            <p>10:00 AM onwards</p>
+            <a href="#">📍 Bumuar</a>
+        </div>
+
+        
+
+        <!-- Wedding -->
+        <div class="program-card">
+            <img src="images/wedding-removebg-preview.png" alt="">
+            <h3>Shadi (विवाह)</h3>
+            <p>11th March, 2026</p>
+            <p>10:00 AM onwards</p>
+            <a href="#">📍 Patratu, Ranchi</a>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- VENUE SECTION -->
+<section class="venue-section">
+
+    <div class="section-header">
+        <span class="sub-title">VENUE</span>
+        <h2 class="script-title">Patratu Paryatan Vihar</h2>
+
+        <div class="heart-divider">
+            <span></span>
+            <i>❤</i>
+            <span></span>
+        </div>
+    </div>
+
+    <div class="venue-map">
+
+        <!-- Replace src with your real Google Maps embed link -->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3655.8553222650326!2d85.27846987535794!3d23.609521094170205!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f4ebcb9f17b3cd%3A0xf55620d87bfdd35e!2sParyatan%20vihar!5e0!3m2!1sen!2sin!4v1771521448538!5m2!1sen!2sin" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    </div>
+
+
+</section>
+
+<!-- FRIENDS & FAMILY SECTION -->
+<section class="family-section">
+
+    <div class="section-header">
+        <span class="sub-title">FRIENDS & FAMILY</span>
+        <h2 class="script-title">Invitee's</h2>
+
+        <div class="heart-divider">
+            <span></span>
+            <i>❤</i>
+            <span></span>
+        </div>
+    </div>
+
+    <div class="family-grid">
+
+        <div class="family-card">
+            <h3>Satendra Narayan</h3>
+            <p>Bride's father</p>
+        </div>
+
+        <div class="family-card">
+            <h3>Reena</h3>
+            <p>Bride's mother</p>
+        </div>
+
+        <!-- <div class="family-card">
+            <h3>Anukul</h3>
+            <p>Bride's brother</p>
+        </div> -->
+
+
+    </div>
+
+</section>
+
+<!-- HELLO DEAR SECTION -->
+<section class="message-section">
+
+    <h2 class="script-title big-script">प्रिय परिवार एवं मित्रों</h2>
+
+    <p class="message-text">
+        आपका स्नेह, आशीर्वाद और उपस्थिति हमारे इस पावन अवसर को पूर्णता प्रदान करेंगे।
+    </p>
+
+    <div class="heart-divider">
+        <span></span>
+        <i>❤</i>
+        <span></span>
+    </div>
+
+</section>
+
+
+<!-- THANK YOU FOOTER -->
+<footer class="thankyou-section">
+
+    <h2 class="script-title">Thank You</h2>
+
+    <div class="heart-divider light">
+        <span></span>
+        <i>❤</i>
+        <span></span>
+    </div>
+
+    <div class="contact-info">
+        <p>+91 99340 21524  |  +91 82101 20714</p>
+    </div>
+
+
+</footer>
+
+
+<script src="script.js"></script>
+</body>
+</html>
